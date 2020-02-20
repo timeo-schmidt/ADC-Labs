@@ -1,0 +1,20 @@
+Estimated error:- (-0.7 - (-9.47512 - 5 ) ) / 120 = 4.31%
+
+Actual error: (1.12 - 1.01 ) / 1.01 = 10.9% 
+(Not very close to the estimated error)
+
+-20V -> 1.16mA
+
+-17.5V -> 1.14mA
+
+-15V -> 1.12mA
+
+-12.5V -> 1.10mA
+
+-10V -> 1.08mA
+
+Rout = 2.5V/0.02mA = 102.5k ohm
+
+Output resistance ~= EA/Ic = 120 / 1.076m = 111.5k ohm
+
+
