@@ -1,0 +1,18 @@
+Actual Error = (0.860-0.857)/0.860 = 3%
+
+(This is much smaller than the error we obtained in Test 1, which was about 10%)
+
+(The current transfer accuracy is much better.)
+
+Voltage drop across Rm is neglected.
+
+Vc/V    Io/mA
+-15     0.857
+-12.5   0.857
+-10     0.857
+-7.5    0.856
+-5      0.856
+
+Output resistance = Delta_Vout / Delta_Iout = 2.5V / 0.001mA(0.000mA) = 2.5M ohm --> tends to infinity --> Really large
+
+Therefore, no matter how Vout changes, Iout stays constant, resulting in a ideal current mirror.
