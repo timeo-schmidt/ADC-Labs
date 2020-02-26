@@ -1,0 +1,59 @@
+1: How to calculate Rb
+
+(5-(-4.3))/Rb = 1m / 200
+estimated value Rb = 1860000 ohm
+
+Rc = 5/1m = 5k ohm
+
+
+After acutally measuring, Rb needs to be 1944143 ohm to produce an Ic of 1mA.
+
+This implies that Beta of the transistor 2N2222 is actually 
+
+1m / ((5-(-4.346))/1944143) = Beta
+Beta = 208
+
+2: Deriving equation (6)
+
+vo = -gmVbe*(r0//Rc)
+vin = vbe
+
+Av = vo/vin = -gm*(r0//Rc)
+
+3:  Measure the output voltage of the amplifier when its input is open-circuit and adjust RB to get Vo less than ±0.2V.
+
+Measured, it's shown in picture test4_prep.
+
+4: Prediction from equation(6) 
+
+r0 = Ea/Ic = 100V / 1mA = 100k ohm
+
+Av = -gm [Rc//r0] = - (1m / 25m) * [5000//100k] = 190.48
+
+ 
+Actual Av = -(2.625 + 4.900)/2 / 20m = 188.125 
+(It is very close to the prediction.)
+
+
+Input resistance:
+
+	1: vout = (2.625+4.900)/2 = 7.525/2 = 3.7625V (amplitude)
+
+	2.v'out = (1.23+1.32)/2 = 1.275V (amplitude) it has decreased
+
+	because vout = v'out (1+10k/ Rin)
+
+	3.7625 = 1.275*(1+10000/Rin)
+
+	Rin = 5125.63 ohm
+
+Active Loads
+The voltage gain of the original high gain amplifier can be increased to a maximum by making RC >> r0 so that
+AV = -gm r0 (from equation 7). However, this would be impractical because:
+ It would require a much larger power supply to maintain the same collector current.
+ A 1MΩ resistor could probably consume more chip area than the rest of the transistors in the op-amp (to give you some idea of resistor size in an integrated circuit).
+ Stray capacitance associated with large resistors can be destructive for high frequency performance.
+
+By having an active load, we can have a very large collector resistor with almost the same chip area as a single transistor.
+
+
