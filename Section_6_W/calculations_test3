@@ -57,3 +57,20 @@ AV = -gm r0 (from equation 7). However, this would be impractical because:
 By having an active load, we can have a very large collector resistor with almost the same chip area as a single transistor.
 
 
+Test 4:
+
+1.Build up th circuit.
+
+2. (5-0.7-(-5))/Rb = 1mA
+Rb = 9.3k ohm
+
+3. 0.7/R1 = 2IB = 1mA/208*2
+       R1 = 72.8k ohm
+
+	4.3/2R2 = 3IB
+	R2 = 149kohm
+
+4. input amplitude: 3.0mV
+output amplitud: 4.65V
+
+Av = 4.65/3.0m = 1.55k
