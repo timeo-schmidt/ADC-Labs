@@ -1,0 +1,24 @@
+Trying to have a large current gain, but a unity voltage gain.
+
+1. build the circuit
+
+2. Distortion on output shown
+
+3. Av = 370mV / 1V = 0.37
+
+It is misleading to quote this value because the output is cross-over distorted..
+
+4. Why do you think this amplifier is termed 'push-pull'?
+
+Crossover distortion is a type of distortion which is caused by switching between devices driving a load.
+
+The term crossover signifies the "crossing over" of the signal between devices, in this case, from the upper transistor to the lower and vice versa.
+
+Crossover distortion is mostly commonly seen in complementary or "push-pull".
+
+Consider a positive-going swing: As long as the input is less than the required forward VBE drop (≈ 0.65 V) of the upper NPN transistor, it will remain off or conduct very little - this is the same as a diode operation as far as the base circuit is concerned, and the output voltage does not follow the input (the lower PNP transistor is still off because its base-emitter diode is being reverse biased by the positive-going input). The same applies for the lower transistor but for a negative-going input. Thus, between about ±0.65 V of input, the output voltage is not a true replica or amplified version of the input, and we can see that as a "kink" in the output waveform near 0 V (or where one transistor stops conducting and the other starts). This kink is the most pronounced form of crossover distortion, and it becomes more evident and intrusive when the output voltage swing is reduced.
+
+5. build the circuit
+
+6. There is no more distortion. A sinusoidal waveform is shown at the output. Also, the magnitude is larger, the voltage amplitude of the voltage output is almost the same as the amplitude of the voltage input.
+
