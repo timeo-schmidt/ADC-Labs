@@ -1,0 +1,12 @@
+Notes for Test 5
+
+Why is the DC value of v_0 at roughly -4V ? -- Don't know		!!!
+
+Amplifier gain measurement at v_d 15mv (peak-peak) at 1kHz.
+
+Peak to Peak of Input Signal: 	15mV
+Peak to Peak of Output Signal: 	(-3.85)-(-4.14)= 0.29V = 290mV
+
+Gain Vout/Vin = 19.33 
+
+ToDo: Differential Input resistance section				!!!

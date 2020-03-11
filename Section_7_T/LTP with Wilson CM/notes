@@ -1,0 +1,18 @@
+What value should R1 take ? 					!!!
+
+
++5V - 0.7 -0.7 - (-5)= 8.6V (across R1)
+Desired Input current at Wilson Current Mirror Input: 1mA
+
+8.6V/R1 = 1mA
+R1 = 8.6kOhm
+
+DC Output of LTP with Wilson Current Mirror: -4V
+Common Mode Voltage Gain: 
+
+input: 7.5 - (-7.5) = 15mV
+output: -3.86-(-4.14) = 280mV
+
+Gain v_out/v_in = 18.67
+
+
