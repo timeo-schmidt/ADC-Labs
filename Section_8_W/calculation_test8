@@ -1,0 +1,23 @@
+In the power amplifier you have built, accidental short circuit at the output will 'blow' the output transistors, since there is no current limiting at the output. Output current limiting is extremely important, to protect the output devices in the amplifier from over-loading.
+
+This block will not affect the operation of the amplifier, but it gives us an idea about how to design a blck to protect your circuit from potential mistakes.
+
+the load, T2(8) will remain off. T2(8) will only come on when the current through resistor RCL is sufficient to cause a voltage drop of greater than about 0.6V, and hence forward bias T2(8). T2(8) will conduct and 'rob' current from the base of T2(7). The load current will thus remain fixed at approximately 0.6/RCL. This is the output current limit of the amplifier and is set by resistor RCL.
+
+For example, if you have an output transistor which has a maximum current rating of say 12mA, we might want to limit the output current to 6mA.
+
+1. The maximum current rating for T2 is 600mA.
+
+Therefore, a suitable resistance value of RcL which can limit the current to about half of this would be 
+
+0.6/RcL = 0.3
+RcL = 2
+
+2. Connect the two more transistors to the circuitry (AB push-pull amplifier for test 8.
+
+3. A drawback of this classical class AB power amplifier is the use of resistors RB to set the bias current. A common collector (which is a unity gain voltage amplifier) should have very high input resistance, and this is seriously degraded by RB. Furthermore, the larger the voltage drop across resistor RB, the greater the limitation imposed on the maximum output voltage swing of the amplifier, since
+Vo max =~Vsupply - VRB - VBE
+
+I lowered the current limit by making RCL 20 ohm and Rl 5 ohm.
+
+I can see that the current is limited between 30mA and -30mA. (see pic)
