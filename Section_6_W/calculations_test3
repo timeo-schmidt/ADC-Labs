@@ -71,6 +71,6 @@ Rb = 9.3k ohm
 	R2 = 149kohm
 
 4. input amplitude: 3.0mV
-output amplitud: 4.65V
+output amplitude: 4.65V
 
 Av = 4.65/3.0m = 1.55k
